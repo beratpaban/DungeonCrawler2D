@@ -50,10 +50,13 @@ TagManager:
   - name: Walls
     uniqueID: 115767579
     locked: 0
+  - name: Interactables
+    uniqueID: 660335315
+    locked: 0
   - name: Characters
     uniqueID: 2168336779
     locked: 0
-  - name: Foreground
+  - name: UI
     uniqueID: 4078341655
     locked: 0
   m_RenderingLayers:
