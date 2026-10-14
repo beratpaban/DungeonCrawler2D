@@ -10105,6 +10105,7 @@ GameObject:
   - component: {fileID: 1281171793}
   - component: {fileID: 1281171792}
   - component: {fileID: 1281171795}
+  - component: {fileID: 1281171796}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10271,7 +10272,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -10287,13 +10288,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26874b6bd7474cc2a5ea82bd11209ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
-  attackAction: {fileID: 0}
+  attackAction: {fileID: 7598361568549485953, guid: e5e70665b3be44f2aa13f90a81b1a18f, type: 3}
   weaponPivot: {fileID: 546488440}
   swordRenderer: {fileID: 1496960764}
   attackCollider: {fileID: 1496960763}
   attackDuration: 0.12
   attackArc: 80
   attackCooldown: 0.25
+--- !u!114 &1281171796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281171789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183f97afe7ab34c44b2abd8d4925f39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
+  coinCount: 0
+  keyCount: 0
 --- !u!1 &1440524838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10351,6 +10366,7 @@ GameObject:
   - component: {fileID: 1496960762}
   - component: {fileID: 1496960764}
   - component: {fileID: 1496960763}
+  - component: {fileID: 1496960765}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -10479,6 +10495,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1496960765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496960761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c03b5817b6548918a3d7229df8ea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageDealer
+  damage: 1
 --- !u!1 &1732601566
 GameObject:
   m_ObjectHideFlags: 0
